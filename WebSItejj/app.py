@@ -48,4 +48,4 @@ def index():
     # Return a list of the column names (sample names)
 #    return jsonify(list(df.columns)[2:])
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
