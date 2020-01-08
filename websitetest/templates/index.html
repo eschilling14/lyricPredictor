@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/boostrap-responsive.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='color/default.css') }}">
-
+	
 	<!--<link rel="stylesheet" href="/static/css/bootstrap-responsive.css">	
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<link rel="stylesheet" type="text/css" href="static/color/default.css">-->
@@ -34,7 +34,7 @@
 
 <body>
 	<!-- navbar -->
-	<div class="navbar-wrapper">
+	 <div class="navbar-wrapper"> 
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
@@ -61,19 +61,23 @@
 	<div id="header-wrapper" class="header-slider">
 		<header class="clearfix">
 			<div class="container">
+			 <!-- <img src="{{ url_for('static', filename='img/recordplayer.jpg') }}" alt="RP">-->
 				<div class="row">
 					<div class="span12">
 						<div id="main-flexslider" class="flexslider">
 							<div class="flex-viewport" class=flexslider>
+							
 								<h1>LYRIC - /'lirik/</h1>
 								
 								<h3>(of poetry) expressing the writer's emotions, usually briefly and in stanzas or recognized forms.</h3>
 								
 								<h3>the words of a song.</h3>
+							</div>	
 						</div>
-						<!-- end slider -->
+					
 					</div>
 				</div>
+			 
 			</div>
 		</header>
 	</div>
@@ -82,10 +86,10 @@
 		<div class="container">
 			<h1> <strong>THE PROJECT</strong></h1>
 			<p>We developed a machine learning program that will categorize lyrics of songs into 1 of 4 genres: Rock, Hip/Hop, Country, and Pop.</p>
-				<p>Data: We located a data set from XXXXX that was composed of XXXXX songs in XXXXX genres.
+				<p><strong>Data:</strong> We located a data set from XXXXX that was composed of XXXXX songs in XXXXX genres.
 					(HOW WE CLEANED AND REDUCED DATA)
-				   <p>Process: (Explain process of building model & Testing)</p>
-				   <p>Result: (The model performed to X% of accuracy)</p>
+				   <p><strong>Processs:</strong> (Explain process of building model & Testing)</p>
+				   <p><strong>Result:</strong> (The model performed to X% of accuracy)</p>
 				  
 			
 	
@@ -103,8 +107,6 @@
 			<div class="row">
 				<div class="span3 animated-fast flyIn">
 					<div class="service-box">
-						<!----="{{ url_for('static', filename='css/boostrap-responsive.css') }}"-->
-						<!--<img src="../img/wordcloud.jpeg" alt="" /-->
 						<img src="{{ url_for('static', filename='img/wordcloud.jpeg') }}" alt="" />
 						<h3>Hip-Hop/Rap</h3>
 						<p>
@@ -154,65 +156,65 @@
 			<div class="span5">
 			  <h4>Results</h4>
 				<textarea name="" id="" cols="20" rows="10"></textarea>
+				<button class= "btn Clear"> Clear </button>
 			</div>
 		</div>
 	</section>
 
 	<section id="Listen Up" class="sectionPlay">
 		<div class="container clearfix">
-			<h1> <strong>Listen up!</strong> </h1>
-			<p> <strong>Have a listen to a sample of well known songs</p>
-				         arranged in a different genre.
-			</strong></p>
-			<iframe src="https://open.spotify.com/embed/playlist/52Aq2AspDC7oqLhRE8WVyJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			
+		
+			<h1> <strong>Listen up!</strong></h1>
+				<h2>Have a listen to a sample of well known songs
+				arranged in a different genre.</h2>
+		     	<iframe src="https://open.spotify.com/embed/playlist/52Aq2AspDC7oqLhRE8WVyJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"> </iframe>
+
+			</div>
 		</div>
 		</section>
 
+
 	<section id="Team" class="sectionTeam">
-		<div class="container">
-			<h4>Who We Are</h4>
-			<div class="row">
-				<div class="span12 offset0.5">
-					
-			<div class="row">
-				<div class="span2 offset1 flyIn">
-					<div class="people">
-						<img class="team-thumb img-circle" src="../img/team/BP.jpg" alt="BP" />
-						<a href= "https://www.linkedin.com/in/brooklyn-payne-35314785/"> <h3>Brooklyn Payne</h3>
-					
-					</div>
-				</div>
-				<div class="span2 flyIn">
-					<div class="people">
-						<img class="team-thumb img-circle" src="../img/team/ES.jpg" alt="" />
-						<a href ="https://www.linkedin.com/in/elizabeth-schilling-076959135/"> <h3>Elizabeth Schilling</h3> </a>
-						
-					</div>
-				</div>
-				<div class="span2 flyIn">
-					<div class="people">
-						<img class="team-thumb img-circle" src="../img/team/BS.jpg" alt="" />
-						<a href= "https://www.linkedin.com/in/brandon-spruill-4939a09b/"> <h3>Brandon Spruill</h3> </a>
-					
-					</div>
-				</div>
-				<div class="span2 flyIn">
-					<div class="people">
-						<img class="team-thumb img-circle" src="../img/team/JJ.jpeg" alt="" />
-						<a href= "https://www.linkedin.com/in/justus-jarvis-13208765/"> <h3>Justus Jarvis</h3> </a>
-						
-					</div>
-				</div>
-				<div class="span2 flyIn">
-					<div class="people">
-						<img class="team-thumb img-circle" src="../img/team/AM.jpeg" alt="" />
-						<a href="https://www.linkedin.com/in/alexmiller5/"> <h3>Alex Miller</h3> </a>
-						
-					</div>
+	   <div class="container">
+		<h4>Who We Are</h4>
+		<div class="row">
+			<div class="span2 animated-fast flyIn">
+				<div class="service-box">
+					<img src="{{ url_for('static', filename='img/BP.jpg') }}" alt="BP" />
+					<a href= "https://www.linkedin.com/in/brooklyn-payne-35314785/"> <h3>Brooklyn Payne</h3>
 				</div>
 			</div>
-		</div>
+
+			<div class="span2 animated-fast flyIn">
+				<div class="service-box">
+					<img src="{{ url_for('static', filename='img/ES.jpg') }}" alt="ES" />
+						<a href ="https://www.linkedin.com/in/elizabeth-schilling-076959135/"> <h3>Elizabeth Schilling</h3> </a>
+				</div>
+			</div>
+
+			<div class="span2 animated-fast flyIn">
+				<div class="service-box">
+					<img src="{{ url_for('static', filename='img/BS.jpg') }}" alt="BS" />
+					<a href= "https://www.linkedin.com/in/brandon-spruill-4939a09b/"> <h3>Brandon Spruill</h3> </a>
+				</div>
+			</div>
+		
+			<div class="span2 animated-fast flyIn">
+				<div class="service-box">
+					<img src="{{ url_for('static', filename='img/JJ.jpeg') }}" alt="JJ" />
+					<a href= "https://www.linkedin.com/in/justus-jarvis-13208765/"> <h3>Justus Jarvis</h3> </a>
+				</div>
+			</div>
+
+			<div class="span2 animated-fast flyIn">
+				<div class="service-box">
+					<img src="{{ url_for('static', filename='img/AM.jpeg') }}" alt="AM" />
+					<a href="https://www.linkedin.com/in/alexmiller5/"> <h3>Alex Miller</h3> </a>
+				</div>
+			</div>
+
+
+
 
 </body>
 <script src="{{ url_for('static', filename='js/jquery.js') }}" ></script>
