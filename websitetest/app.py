@@ -34,7 +34,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     # """Return the homepage."""
-    return render_template("test.html")
+    return render_template("index.html")
 
 
 #@app.route("/names")
