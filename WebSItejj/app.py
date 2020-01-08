@@ -1,4 +1,4 @@
-#import os
+import os
 
 #import pandas as pd
 #import numpy as np
@@ -33,8 +33,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    """Return the homepage."""
-    return render_template("index.html")
+    # """Return the homepage."""
+    return render_template("test.html")
 
 
 #@app.route("/names")
@@ -48,4 +48,4 @@ def index():
     # Return a list of the column names (sample names)
 #    return jsonify(list(df.columns)[2:])
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
