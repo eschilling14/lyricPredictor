@@ -350,7 +350,7 @@ ul#menu-main > li > a:focus {
 
 
 #header-wrapper h1 {
-	color: #FFFFFF;
+	color: #fff;
 	font-size: 4em;
 	font-weight: 400;
 	margin: 1em 0;
@@ -371,7 +371,7 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(../img/recordplayer.jpg) no-repeat center center fixed;
+	background: #444 url(../../img/recordplayer.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -459,29 +459,60 @@ section.inner {
 }
 
 
-
 .section.orange h4 ,.section.green h4{
 	color: #fcfcfc;
 }
+.section.orange h1,.section.green h1{
+	color: #0b333f;
+	text-align: center;
+}
+.section.orange h3 ,.section.green h3{
+	color: #0b333f;
+}
 .section.orange p,.section.green p {
-	color: #f7f7f7;
+	color: #0b333f;
+	
 }
 
+.section.blue h4 ,.section.blue h4{
+	color: #0b333f;
+	;
+}
+.section.blue h1,.section.blue h1{
+	color: #0b333f;
+	text-align: center;
+}
+.section.blue h3 ,.section.blue h3{
+	color: #0b333f;
+}
+.section.blue p,.section.blue p {
+	color: #0b333f;
+	
+}
 
 
 .sectionTest{
 	background: #0b333f;
-	
+
+}
+
+.section.Test.p,.section.Test.p{
+	color:#fff
+}
+
+.section.Test.h1,.section.Test.h1{
+	color:#fff;
+	text-align: center;
 }
 
 .sectionPlay{
-	background: #444 url(../img/old-gramophone.jpg) no-repeat center center;
+	background: #444 url(../../img/old-gramophone.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: 100%;
+	color: #0b333f;
 }
-
 
 
 .sectionTeam{
