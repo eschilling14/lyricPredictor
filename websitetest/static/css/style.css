@@ -371,7 +371,8 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(../../img/recordplayer.jpg) no-repeat center center fixed;
+	background-image: url("img/recordplayer.jpg") no-repeat center center fixed;
+	background: #444;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -506,7 +507,7 @@ section.inner {
 }
 
 .sectionPlay{
-	background: #444 url(../../img/old-gramophone.jpg) no-repeat center center;
+	background: #444, url('../img/gramophone.jpg'), no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
