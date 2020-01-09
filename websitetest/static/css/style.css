@@ -31,7 +31,6 @@ CONTENTS:
 @import url('prettyPhoto.css');
 /* flexslider */
 @import url('flexslider.css');
-
 /* font awesome */
 @import url('font-awesome.css');
 /* overwrite */
@@ -40,14 +39,15 @@ CONTENTS:
 @import url('animate.css');
 
 
-
 /* =========================================================
 01. General
 ============================================================ */
 
+
 div, article, section, header, footer, nav, li {
 	position:relative;
 }
+
 .group:after {
 	display:block;
 	height:0;
@@ -179,8 +179,8 @@ ul, ol {
 	line-height: 1.5; /* 24px */
 	margin: 0 0 1.5em 0;
 }
-body, input, textarea {
-}
+/*body, input, textarea {
+}*/
 
 a {
   color: #ebd7af;
@@ -275,8 +275,8 @@ h2.pagetitle {
 ============================================================ */
 
 .navbar-fixed-top .container {
-/* Uncomment to make nav expand full width */
- /*	width: auto; */
+/*Uncomment to make nav expand full width */
+ width: auto;
 }
 .navbar .brand {
 	margin-left:0;
@@ -371,12 +371,12 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background-image: url("img/recordplayer.jpg") no-repeat center center fixed;
-	background: #444;
+	background: #444, url(../img/recordplayer.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
 }
 
 #main-flexslider ul.slides li p {
@@ -418,9 +418,9 @@ header .logo {
 #header-wrapper input[type=text]:focus {
 	background: #43413e;
 	color: #eff1ef;
-	transition: background 0.25 ease-in;
-	-moz-transition: background 0.25 ease-in;
-	-webkit-transition: background 0.25 ease-in;
+	transition: "background" 0.25 ease-in;
+	-moz-transition: "background" 0.25 ease-in;
+	-webkit-transition: "background" 0.25 ease-in;
 }
 #header-wrapper input[type=text] {
 	height: 2.9em;
@@ -507,7 +507,7 @@ section.inner {
 }
 
 .sectionPlay{
-	background: #444, url('../img/gramophone.jpg'), no-repeat center center;
+	background: #444, url(../img/recordplayer.jpg), no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1047,7 +1047,5 @@ footer ul.social-networks li a i.icon-pinterest:hover {
  section#services h2, section#services ul {
  text-align: center;
 }
-		
 
-
-		
+}
