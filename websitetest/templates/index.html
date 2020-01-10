@@ -75,9 +75,8 @@
 		<div class="container">
 			<h1> <strong>THE PROJECT</strong></h1>
 			<p>We developed a machine learning program that will categorize lyrics of songs into 1 of 4 genres: Rock, Hip/Hop, Country, and Pop.</p>
-				<p><strong>Data:</strong> We located a data set from XXXXX that was composed of XXXXX songs in XXXXX genres.
-					(HOW WE CLEANED AND REDUCED DATA)
-				   <p><strong>Processs:</strong> (Explain process of building model & Testing)</p>
+				<p><strong>Data:</strong> Data came from Kaggle.com: 380,000+ lyrics spanning from early 2000-present day consisted of genres, lyrics, artists, and year the song came out. 
+				   <p><strong>Processs:</strong> Our team trained a machine learning algorithm to categorize lyrics into a specific genre based on stop words. The genres we chose to train our model were: Hip Hop, R&B, Classic Rock, Alt Rock, and Indie Folk.</p>
 				   <p><strong>Result:</strong> (The model performed to X% of accuracy)</p>
 				  
 			
@@ -94,37 +93,46 @@
 			
 			<!-- Four columns -->
 			<div class="row">
-				<div class="span3 animated-fast flyIn">
+				<div class="span2 animated-fast flyIn">
 					<div class="service-box">
 						<img src="{{ url_for('static', filename='img/wordcloud.jpeg') }}" alt="" />
-						<h3>Hip-Hop/Rap</h3>
+						<h3>Hip-Hop</h3>
 						<p>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 					</div>
 				</div>
-				<div class="span3 animated flyIn">
+				<div class="span2 animated flyIn">
 					<div class="service-box">
 						<img src="{{ url_for('static', filename='img/wordcloud.jpeg') }}" alt="" />
-						<h3>Country</h3>
+						<h3>R&B</h3>
 						<p>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 					</div>
 				</div>
-				<div class="span3 animated-fast flyIn">
+				<div class="span2 animated-fast flyIn">
 					<div class="service-box">
 						<img src="{{ url_for('static', filename='img/wordcloud.jpeg') }}" alt="" />
-						<h3>Rock</h3>
+						<h3>Alt Rock</h3>
 						<p>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 					</div>
 				</div>
-				<div class="span3 animated-slow flyIn">
+				<div class="span2 animated-slow flyIn">
 					<div class="service-box">
 						<img src="{{ url_for('static', filename='img/wordcloud.jpeg') }}" alt="" />
-						<h3>Pop</h3>
+						<h3>Classic Rock</h3>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+						</p>
+					</div>
+				</div>
+				<div class="span2 animated-slow flyIn">
+					<div class="service-box">
+						<img src="{{ url_for('static', filename='img/wordcloud.jpeg') }}" alt="" />
+						<h3>Indie Folk</h3>
 						<p>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
