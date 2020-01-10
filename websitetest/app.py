@@ -8,7 +8,8 @@ import os
 #from sqlalchemy.orm import Session
 #from sqlalchemy import create_engine
 
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template,request
+import json
 #from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -48,9 +49,11 @@ def index():
     # Return a list of the column names (sample names)
 #    return jsonify(list(df.columns)[2:])
 @app.route('/_getlyrics', methods=["GET", "POST"])
-def landing_page(_getlyrics):
+def landing_page():
     if request.method == "POST":
-        name = request.form["value"]
+        payload = json.loads(request.data)
+        value = payload['value']
+        
         return 'success'
     return 'false'
 
