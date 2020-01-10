@@ -47,5 +47,13 @@ def index():
 
     # Return a list of the column names (sample names)
 #    return jsonify(list(df.columns)[2:])
+@app.route('/_getlyrics', methods=["GET", "POST"])
+def landing_page(_getlyrics):
+    if request.method == "POST":
+        name = request.form["value"]
+        return 'success'
+    return 'false'
+
 if __name__ == "__main__":
     app.run()
+
