@@ -1,7 +1,23 @@
 import os
-
-#import pandas as pd
-#import numpy as np
+import pandas as pd
+import numpy as np
+# from sklearn.utils import shuffle
+# from nltk.corpus import stopwords
+# from sklearn.feature_extraction.text import CountVectorizer
+# from sklearn.naive_bayes import MultinomialNB
+# from sklearn.pipeline import Pipeline
+# from sklearn.naive_bayes import MultinomialNB
+# from sklearn.pipeline import Pipeline
+# from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
+# from sklearn.naive_bayes import MultinomialNB
+from sklearn.pipeline import Pipeline
+from nltk import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from sklearn.metrics import confusion_matrix
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+from sklearn.metrics import precision_recall_fscore_support
+from sklearn.externals import joblib
 
 #import sqlalchemy
 #from sqlalchemy.ext.automap import automap_base
@@ -31,6 +47,8 @@ app = Flask(__name__)
 #Samples_Metadata = Base.classes.sample_metadata
 #Samples = Base.classes.samples
 
+import pickle
+model = joblib.load('finalproject.pkl')
 
 @app.route("/")
 def index():
@@ -53,10 +71,12 @@ def landing_page():
     if request.method == "POST":
         payload = json.loads(request.data)
         value = payload['value']
+        print (value)
+        print(model.predict(value))
         
         return 'success'
     return 'false'
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
 
