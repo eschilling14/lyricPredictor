@@ -61,7 +61,7 @@
 <!--TITLE/ HOME-->
 	<section id="header-wrapper" class="header-slider">
 		<div class="clearfix">
-			<img src= "{{ url_for('static', filename='img/recordplayer.jpg') }}" alt="RP"; width=100%>
+			<img src= "{{ url_for('static', filename='img/recordplayer.jpg') }}" alt="RP"; width=100%;>
 				
 					<h1><strong>LYRIC - /'lirik/ </strong></h1>
 					<h3>1: (of poetry) expressing the writer's emotions, usually briefly and in stanzas or recognized forms.</h3>
@@ -138,15 +138,16 @@
 	<section id="Test" class="sectionTest">
 		<div class="container clearfix">
 			
-			<h1><strong>Test Your Lyrics<strong></h1>
+		<h1><strong>Test Your Lyrics<strong></h1>
 			<div class="span5">
-			  <button class= "btn Submit Lyrics"> Submit Lyrics </button>
-				<textarea name="" id="" cols="45" rows="15"></textarea>
+			  <button onclick="submitFunction()">Submit Lyrics</button>
+				<textarea id="submitlyric" cols="45" rows="15"></textarea>
 			</div>
+
 			<div class="span5">
 			  <h4>Results</h4>
-				<textarea name="" id="" cols="20" rows="10"></textarea>
-				<button class= "btn Clear"> Clear </button>
+				<textarea form="clear" cols="20" rows="10"></textarea>
+				<button onclick="clearFunction()">clear</button>
 			</div>
 		</div>
 	</section>
@@ -210,8 +211,9 @@
 
 
 
-
+	<script src="{{ url_for('static', filename='js/submitlyric.js') }}" ></script>
 </body>
+
 <!--<script src="{{ url_for('static', filename='js/jquery.js') }}" ></script>
 	<script src="{{ url_for('static', filename='js/jquery.scrollTo.js') }}" ></script>
 	<script src="{{ url_for('static', filename=' js/jquery.nav.js') }}" ></script>
